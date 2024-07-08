@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Share+Tech+Mono&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --animate-delay: 2s;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232d3f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1e;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #1c1c1e #d1d5db;
+}
+
+/* Custom animations */
+@keyframes slideIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide-in-1 {
+  animation: slideIn 3s forwards 2s;
+}
+
+.slide-in-2 {
+  animation: slideOut 3s forwards 2s;
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards 1s;
+}
+
+// SCROLLBAR
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
