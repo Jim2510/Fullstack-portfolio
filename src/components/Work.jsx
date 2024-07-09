@@ -3,8 +3,11 @@ import gestify from "../assets/gestify.png";
 export function Work() {
   return (
     <>
-      <div className="w-full flex justify-center items-center" id="work">
-        <div className="w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-10">
+      <div
+        className="w-full flex justify-center items-center sm:mx-0 mx-10"
+        id="work"
+      >
+        <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-0 sm:ml-10">
           <div className="flex justify-start items-center w-full flex-wrap mb-10">
             <h2 className="w-fit mr-2 text-3xl font-bold">
               <span className="text-xl font-tech text-main-red">03.</span> Some
@@ -12,8 +15,8 @@ export function Work() {
             </h2>
             <div className="w-full border-b-2 border-gray-50"></div>
           </div>
-          <div className="w-full grid grid-cols-6 gap-20">
-            <div className="col-span-4 h-[350px] mr-12 overflow-hidden relative">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-20">
+            <div className="col-span-4 h-[350px] mx-auto sm:mr-12 overflow-hidden relative sm:rounded-none rounded-md">
               <div className="top-0 absolute w-full h-full"></div>
               <img
                 src={gestify}
