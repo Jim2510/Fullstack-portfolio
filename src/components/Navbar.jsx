@@ -39,17 +39,26 @@ export function Navbar() {
       <div className="w-full h-full absolute backdrop-blur-md -z-10"></div>
       <div className="flex justify-between items-center w-full">
         <a href="#home">
-          <img src={logo} alt="logo" width={60} height={60} className="ml-10" />
+          <img
+            src={logo}
+            alt="logo"
+            width={60}
+            height={60}
+            className="sm:ml-10 ml-4"
+          />
         </a>
-        <div className="grid grid-cols-5 h-[50px] w-fit mr-10 justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-5 h-[50px] mr-4 sm:mr-10 justify-start items-center gap-4">
           {navLink.map((el, index) => {
             return (
               <button
                 key={index}
-                className="text-gray-50 text-[16px] font-tech hover:text-main-red transition-all ease-in-out"
+                className="w-full sm:flex hidden text-gray-50 text-[16px] font-tech justify-center items-center hover:text-main-red transition-all ease-in-out"
               >
-                <a href={el.link}>
-                  <span className="text-sm font-tech text-main-red">
+                <a
+                  href={el.link}
+                  className="flex justify-center items-center gap-1 text-center"
+                >
+                  <span className="text-sm font-tech text-main-red text-start">
                     {el.num}
                   </span>
                   {el.title}
@@ -60,7 +69,7 @@ export function Navbar() {
           <a
             download
             href="..\src\assets\CV_GuglielminoGianmarco.pdf"
-            className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-2 hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-1 font-tech text-emerald-400 mx-4 mb-2"
+            className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-2 hover:bottom-2 bg-custom-green border-[2px] rounded-md sm:text-base text-sm border-main-red px-2 sm:px-4 py-1 font-tech text-emerald-400 mx-4 mb-2"
           >
             RESUME
           </a>
