@@ -7,29 +7,29 @@ export function Work() {
         className="w-full flex justify-center items-center sm:mx-0 mx-10"
         id="work"
       >
-        <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-0 sm:ml-10">
-          <div className="flex justify-start items-center w-full flex-wrap mb-10">
+        <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-0 sm:py-32 gap-8 ml-0 sm:ml-10">
+          <div className="flex justify-start items-center w-full flex-wrap sm:mb-10 mb-2">
             <h2 className="w-fit mr-2 text-3xl font-bold">
               <span className="text-xl font-tech text-main-red">03.</span> Some
               of my works
             </h2>
             <div className="w-full border-b-2 border-gray-50"></div>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-20">
-            <div className="col-span-4 h-[350px] mx-auto sm:mr-12 overflow-hidden relative sm:rounded-none rounded-md">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20">
+            <div className="col-span-1 sm:col-span-4 h-fit sm:h-[350px] mx-auto sm:mr-12 overflow-hidden relative sm:rounded-none rounded-md">
               <div className="top-0 absolute w-full h-full"></div>
               <img
                 src={gestify}
                 alt="gestify"
-                className="w-full h-full object-cover"
+                className="w-full h-full  object-contain"
               />
             </div>
-            <div className="col-span-2 h-fit flex justify-center flex-col items-end py-4 text-end gap-4">
+            <div className="col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-end py-4 text-end gap-4">
               <h4 className="font-tech text-second-red">Fullstack Project</h4>
               <h2 className=" text-xl font-extrabold text-nowrap">
                 Gestify - Business Management
               </h2>
-              <div className="overflow-visible w-[500px] text-end bg-main-red p-5 relative rounded-md shadow-2xl">
+              <div className="overflow-visible w-full sm:w-[500px] text-center sm:text-end bg-main-red p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
                   &quot;Gestify&quot; is a business management system designed
                   to provide efficient and customized solutions for commercial
