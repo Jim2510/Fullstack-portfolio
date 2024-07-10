@@ -18,7 +18,7 @@ export function OtherWork() {
             <h2 className="w-fit mr-2 text-3xl font-bold">Other Projects</h2>
           </div>
           <div className="grid-cols-1 grid sm:grid-cols-3 justify-center items-center w-full gap-6">
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +162,7 @@ export function OtherWork() {
               isOpen ? "grid" : "hidden"
             }`}
           >
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +204,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +267,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
