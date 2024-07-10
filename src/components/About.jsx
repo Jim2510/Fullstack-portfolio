@@ -1,4 +1,6 @@
 import photo from "../assets/IMG_20240627_134508_resized_20240627_015015515.jpg";
+import fe from "../assets/2d90c275-4833-418c-b285-abd686a4ad97.png";
+import fs from "../assets/fullstack-certificate.png";
 
 export function About() {
   return (
@@ -35,14 +37,14 @@ export function About() {
               <div className="mb-10 flex gap-2">
                 <a
                   download
-                  href="..\src\assets\2d90c275-4833-418c-b285-abd686a4ad97.png"
+                  href={fe}
                   className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-3 hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-1 font-tech text-emerald-400"
                 >
                   Front-end Certificate
                 </a>
                 <a
                   download
-                  href="..\src\assets\fullstack-certificate.png"
+                  href={fs}
                   className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-3 hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-1 font-tech text-emerald-400"
                 >
                   FullStack Certificate
