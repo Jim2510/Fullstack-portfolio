@@ -30,7 +30,7 @@ export function Experience() {
           <div className="w-full sm:flex-row flex-col flex gap-20 px-0 sm:px-5">
             <div className="col-span-1 flex flex-row sm:flex-col items-start font-tech justify-start">
               <button
-                className={`border-b-2 sm:border-l-2 px-2 py-2 min-w-[50px] text-center sm:text-start ${
+                className={` sm:border-b-0 border-b-2 sm:border-l-2 px-2 py-2 min-w-[50px] sm:min-w-[130px] text-center sm:text-start ${
                   activeButton === "Start2Impact"
                     ? "text-main-red border-main-red font-bold bg-second-red/20"
                     : "text-white border-main-red/50"
@@ -40,7 +40,7 @@ export function Experience() {
                 Start2Impact
               </button>
               <button
-                className={`border-b-2 sm:border-l-2 px-2 py-2 min-w-[50px] text-center sm:text-start ${
+                className={`sm:border-b-0 border-b-2 sm:border-l-2 px-2 py-2 min-w-[50px] sm:min-w-[130px] text-center sm:text-start ${
                   activeButton === "Develhope"
                     ? "text-main-red border-main-red font-bold bg-second-red/20"
                     : "text-white border-main-red/50"
@@ -50,7 +50,7 @@ export function Experience() {
                 Develhope
               </button>
               <button
-                className={`border-b-2 sm:border-l-2 px-2 py-2 min-w-[50px] text-center sm:text-start ${
+                className={`sm:border-b-0 border-b-2 sm:border-l-2 px-2 py-2 min-w-[50px] sm:min-w-[130px] text-center sm:text-start ${
                   activeButton === "Other"
                     ? "text-main-red border-main-red font-bold bg-second-red/20"
                     : "text-white border-main-red/50"
