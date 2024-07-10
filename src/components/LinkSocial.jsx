@@ -1,7 +1,7 @@
 export function LinkSocial() {
   return (
     <>
-      <div className="fixed bottom-0 flex flex-col left-2 sm:left-56 gap-4 justify-center items-center z-40">
+      <div className="fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
         <a href="https://www.reddit.com/user/LazyBoysenberry7816/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +67,12 @@ export function LinkSocial() {
           </svg>
         </a>
         <div className="h-[100px] sm:h-[200px] border-l-2 border-gray-50 translate-x-1/2"></div>
+      </div>
+      <div className="fixed bottom-0 flex flex-col right-[-4.5rem] sm:right-10 gap-24 justify-center items-center z-40">
+        <p className="text-white text-sm rotate-90 font-tech">
+          GUGLIELMINO2510@GMAIL.COM
+        </p>
+        <div className="h-[100px] sm:h-[100px] border-l-2 border-gray-50 translate-x-1/2"></div>
       </div>
     </>
   );

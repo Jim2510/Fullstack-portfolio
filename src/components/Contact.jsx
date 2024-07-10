@@ -55,14 +55,14 @@ export function Contact() {
       >
         <div className="w-full sm:w-[40%] text-white flex justify-center items-center flex-col py-32 gap-8">
           <div className="flex justify-center items-center w-full flex-wrap mb-10 flex-col gap-4">
-            <h3 className="w-fit mr-2 text-2xl sm:text-xl font-bold text-center">
+            <h3 className="w-fit mr-2 text-2xl sm:text-xl font-bold text-center sm:pb-2 pb-0">
               <span className="text-xl font-tech text-main-red">04.</span>{" "}
               What&apos;s Next?
             </h3>
             <h2 className="text-4xl sm:text-[50px] font-bold text-center sm:py-0 py-4">
               Get In Touch
             </h2>
-            <p className="text-justify sm:text-center text-md text-gray-400">
+            <p className="text-justify sm:text-center text-md text-gray-400 sm:pt-4 pt-0">
               I&apos;m currently seeking new job opportunities, whether as a
               private freelancer, collaborating on open-source projects, or
               joining leading companies in the industry. My inbox is always

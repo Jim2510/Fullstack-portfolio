@@ -17,7 +17,7 @@ export function Experience() {
         className="w-full flex justify-center items-center sm:mx-0 sm:px-0 px-10"
         id="experience"
       >
-        <div className="w-full sm:w-[50%] text-white flex justify-center items-center flex-col py-32 gap-8 ">
+        <div className="w-full sm:w-[54%] text-white flex justify-center items-center flex-col py-32 gap-8 ">
           <div className="w-full">
             <div className="flex justify-start items-center w-full flex-wrap mb-10">
               <h2 className="w-fit mr-2 text-3xl font-bold">

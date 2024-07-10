@@ -165,11 +165,11 @@ export function About() {
                 <div className="sm:absolute w-full sm:w-[255px] h-ful hover:bg-transparent transition-all ease-in-out rounded-lg"></div>
                 <img
                   src={photo}
-                  alt=""
-                  className="h-full sm:h-[341px] sm:w-[255px] w-full sm:rounded-md object-cover sm:border-none border-4 border-main-red"
+                  alt="photo"
+                  className="h-full sm:h-[341px] sm:w-[255px] w-full sm:rounded-md object-fill sm:border-none border-4 border-main-red"
                 />
               </div>
-              <div className=" sm:flex hidden transition-all ease-in-out group-hover:top-4 group-hover:left-4 border-[3px] rounded-t-lg rounded-bl-lg border-main-red w-[255px] h-[300px] absolute top-2 left-2 bg-transparent"></div>
+              <div className="sm:flex hidden transition-all ease-in-out group-hover:top-4 group-hover:left-4 border-[3px] rounded-t-lg rounded-bl-lg border-main-red w-[255px] h-[300px] absolute top-2 left-2 bg-transparent"></div>
             </div>
           </div>
         </div>
