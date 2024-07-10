@@ -77,6 +77,11 @@ export function Contact() {
                 Say Hello!
               </button>
             </div>
+            <div className="absolute bottom-0 flex justify-center items-center">
+              <p className="text-center font-tech text-gray-400 hover:text-main-red text-sm pb-2">
+                Build by Gianmarco Guglielmino
+              </p>
+            </div>
           </div>
         </div>
         <div
