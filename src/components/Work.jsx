@@ -4,12 +4,12 @@ export function Work() {
   return (
     <>
       <div
-        className="w-full flex justify-center items-center sm:mx-0 mx-10"
+        className="w-full flex justify-center items-center sm:px-0 px-10"
         id="work"
       >
         <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-0 sm:py-32 gap-8 ml-0 sm:ml-10">
           <div className="flex justify-start items-center w-full flex-wrap sm:mb-10 mb-2">
-            <h2 className="w-fit mr-2 text-3xl font-bold">
+            <h2 className="w-fit mr-2 text-2xl sm:text-3xl font-bold">
               <span className="text-xl font-tech text-main-red">03.</span> Some
               of my works
             </h2>
@@ -25,11 +25,13 @@ export function Work() {
               />
             </div>
             <div className="col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-end py-4 text-end gap-4">
-              <h4 className="font-tech text-second-red">Fullstack Project</h4>
-              <h2 className=" text-xl font-extrabold text-nowrap">
+              <h4 className="font-tech text-second-red text-xl sm:text-base">
+                Fullstack Project
+              </h4>
+              <h2 className=" sm:text-xl font-extrabold text-wrap text-center sm:text-nowrap text-2xl">
                 Gestify - Business Management
               </h2>
-              <div className="overflow-visible w-full sm:w-[500px] text-center sm:text-end bg-main-red p-5 relative rounded-md shadow-2xl">
+              <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-end bg-main-red p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
                   &quot;Gestify&quot; is a business management system designed
                   to provide efficient and customized solutions for commercial
@@ -37,7 +39,7 @@ export function Work() {
                   fullstack programming course attended.
                 </p>
               </div>
-              <h4 className="text-[12px] overflow-visible font-tech text-nowrap">
+              <h4 className="text-[12px] overflow-visible font-tech text-wrap sm:text-nowrap text-center">
                 Javascript - React - Redux - Node - Express - Jwt - MongoDB
               </h4>
               <a href="">

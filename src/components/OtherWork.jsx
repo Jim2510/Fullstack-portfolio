@@ -9,12 +9,15 @@ export function OtherWork() {
 
   return (
     <>
-      <div className="w-full flex justify-center items-center" id="experience">
-        <div className="w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-10">
+      <div
+        className="w-full flex justify-center items-center px-10 sm:px-0"
+        id="experience"
+      >
+        <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-0 sm:ml-10">
           <div className="flex justify-center items-center w-full flex-wrap mb-10">
             <h2 className="w-fit mr-2 text-3xl font-bold">Other Projects</h2>
           </div>
-          <div className="grid grid-cols-3 justify-center items-center w-full gap-6">
+          <div className="grid-cols-1 grid sm:grid-cols-3 justify-center items-center w-full gap-6">
             <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
@@ -138,7 +141,9 @@ export function OtherWork() {
                 </a>
               </div>
               <div className="flex justify-center items-start flex-col px-10 gap-4">
-                <h3 className="text-xl font-bold">Interactive Sushi Menu</h3>
+                <h3 className="text-lg sm:text-xl font-bold">
+                  Interactive Sushi Menu
+                </h3>
                 <div className="h-[100px] overflow-auto no-scrollbar">
                   <h2 className="text-sm">
                     A functional application to track orders, manage inventory,
@@ -153,7 +158,7 @@ export function OtherWork() {
             </div>
           </div>
           <div
-            className={`grid grid-cols-3 justify-center items-center w-full gap-6 ${
+            className={`grid grid-cols-1 sm:grid-cols-3 justify-center items-center w-full gap-6 ${
               isOpen ? "grid" : "hidden"
             }`}
           >

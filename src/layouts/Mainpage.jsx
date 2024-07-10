@@ -10,7 +10,7 @@ import { Work } from "../components/Work";
 
 export function Mainpage() {
   return (
-    <div className="scrollbar w-full h-full font-kumbh relative bg-gradient-to-br from-custom-dark via-custom-dark to-custom-green bg-cover overflow-y-auto">
+    <div className="scrollbar font-kumbh relative bg-gradient-to-br from-custom-dark via-custom-dark to-custom-green bg-cover overflow-y-auto">
       <Animation />
       <Navbar />
       <TitleSection />

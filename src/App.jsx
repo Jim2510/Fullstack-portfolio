@@ -5,7 +5,7 @@ import { Mainpage } from "./layouts/Mainpage";
 function App() {
   return (
     <Router>
-      <div className="w-full h-fit flex ">
+      <div className="max-w-screen flex ">
         <Routes>
           <Route path="/" element={<Mainpage />} />
         </Routes>
