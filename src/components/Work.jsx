@@ -42,7 +42,7 @@ export function Work() {
               <h4 className="text-[12px] overflow-visible font-tech text-wrap sm:text-nowrap text-center">
                 Javascript - React - Redux - Node - Express - Jwt - MongoDB
               </h4>
-              <a href="">
+              <a href="https://github.com/Jim2510/gestify_business_managment/tree/main">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
