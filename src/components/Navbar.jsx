@@ -6,7 +6,9 @@ export function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
+    if (window.scrollY === 0) {
+      setIsVisible(true);
+    } else if (window.scrollY > lastScrollY) {
       setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -15,12 +17,10 @@ export function Navbar() {
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
   }, [lastScrollY]);
 
   const navLink = [
