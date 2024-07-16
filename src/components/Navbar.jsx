@@ -30,6 +30,14 @@ export function Navbar() {
     { num: "04. ", title: "CONTACT", link: "#contact" },
   ];
 
+  const handleScroll = (event, link) => {
+    event.preventDefault();
+    const targetElement = document.querySelector(link);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className={`fixed top-0 w-full h-[70px] bg-transparent shadow-2xl z-20 flex justify-center items-center transition-transform duration-300 ${
@@ -48,24 +56,23 @@ export function Navbar() {
           />
         </a>
         <div className="grid grid-cols-1 sm:grid-cols-5 h-[50px] mr-4 sm:mr-10 justify-start items-center gap-4">
-          {navLink.map((el, index) => {
-            return (
-              <button
-                key={index}
-                className="w-full sm:flex hidden text-gray-50 text-[16px] font-tech justify-center items-center hover:text-main-red transition-all ease-in-out"
+          {navLink.map((el, index) => (
+            <button
+              key={index}
+              className="w-full sm:flex hidden text-gray-50 text-[16px] font-tech justify-center items-center hover:text-main-red transition-all ease-in-out"
+            >
+              <a
+                href={el.link}
+                onClick={(e) => handleScroll(e, el.link)}
+                className="flex justify-center items-center gap-1 text-center"
               >
-                <a
-                  href={el.link}
-                  className="flex justify-center items-center gap-1 text-center"
-                >
-                  <span className="text-sm font-tech text-main-red text-start">
-                    {el.num}
-                  </span>
-                  {el.title}
-                </a>
-              </button>
-            );
-          })}
+                <span className="text-sm font-tech text-main-red text-start">
+                  {el.num}
+                </span>
+                {el.title}
+              </a>
+            </button>
+          ))}
           <a
             download
             href="..\src\assets\CV_GuglielminoGianmarco.pdf"
