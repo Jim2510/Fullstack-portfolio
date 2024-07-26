@@ -21,7 +21,7 @@ export function Work() {
               <img
                 src={gestify}
                 alt="gestify"
-                className="w-full h-full  object-fill"
+                className="w-full h-full  object-cover"
               />
             </div>
             <div className="col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-end py-4 text-end gap-4">
