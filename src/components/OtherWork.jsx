@@ -13,7 +13,7 @@ export function OtherWork() {
         className="w-full flex justify-center items-center px-10 sm:px-0"
         id="experience"
       >
-        <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-0 sm:ml-10">
+        <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-0">
           <div className="flex justify-center items-center w-full flex-wrap mb-10">
             <h2 className="w-fit mr-2 text-3xl font-bold">Other Projects</h2>
           </div>

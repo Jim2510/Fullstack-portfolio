@@ -17,11 +17,10 @@ export function Work() {
           </div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20">
             <div className="col-span-1 sm:col-span-4 h-fit sm:h-[350px] mx-auto sm:mr-12 overflow-hidden relative sm:rounded-none rounded-md">
-              <div className="sm:flex hidden top-0 absolute w-full h-full hover:bg-transparent transition-all ease-in-out bg-main-red/50"></div>
               <img
                 src={gestify}
                 alt="gestify"
-                className="w-full h-full  object-cover"
+                className="w-full h-full  object-cover sm:object-contain"
               />
             </div>
             <div className="col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-end py-4 text-end gap-4">

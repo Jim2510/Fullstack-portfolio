@@ -1,7 +1,19 @@
+import coffee from "../assets/cup.png";
+
 export function LinkSocial() {
   return (
     <>
-      <div className="fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
+      <div className=" group fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
+        <a href="https://buy.stripe.com/bIY6oOeGm1iBaUEbII">
+          <img
+            src={coffee}
+            alt="coffee"
+            className="w-[25px] h-[25px] left-[0.10rem] relative"
+          />
+          <div className=" justify-center items-center absolute sm:group-hover:flex sm:hidden hidden text-black font-bold -top-12 -right-16 rounded-2xl bg-main-red px-2 py-1 w-[150px] ">
+            Buy me a coffee!
+          </div>
+        </a>
         <a href="https://www.reddit.com/user/LazyBoysenberry7816/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
