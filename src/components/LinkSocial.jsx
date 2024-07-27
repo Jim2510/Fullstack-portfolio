@@ -1,4 +1,4 @@
-import coffee from "../assets/cup.png";
+import coffee from "../assets/bitcoin.png";
 
 export function LinkSocial() {
   return (
@@ -8,7 +8,7 @@ export function LinkSocial() {
           <img
             src={coffee}
             alt="coffee"
-            className="w-[25px] h-[25px] left-[0.10rem] relative"
+            className="w-[25px] h-[25px] relative "
           />
           <div className=" justify-center items-center absolute sm:group-hover:flex sm:hidden hidden text-black font-bold -top-12 -right-16 rounded-2xl bg-main-red px-2 py-1 w-[150px] ">
             Buy me a coffee!
