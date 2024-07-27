@@ -86,7 +86,7 @@ export function Navbar() {
           ))}
           <a
             download
-            href="..\src\assets\CV_GuglielminoGianmarco.pdf"
+            href="../assets/CV_GuglielminoGianmarco.pdf"
             className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-2 hover:bottom-2 bg-custom-green border-[2px] rounded-md sm:text-base text-sm border-main-red px-2 sm:px-4 py-1 font-tech text-emerald-400 mx-4 mb-2"
           >
             RESUME
