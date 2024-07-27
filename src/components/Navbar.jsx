@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../../src/assets/Immagine_2024-07-08_181241-removebg-preview.png";
+import pdf from "../assets/CV_GuglielminoGianmarco.pdf";
 
 export function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -86,7 +87,7 @@ export function Navbar() {
           ))}
           <a
             download
-            href="../assets/CV_GuglielminoGianmarco.pdf"
+            href={pdf}
             className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-2 hover:bottom-2 bg-custom-green border-[2px] rounded-md sm:text-base text-sm border-main-red px-2 sm:px-4 py-1 font-tech text-emerald-400 mx-4 mb-2"
           >
             RESUME
