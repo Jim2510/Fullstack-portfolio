@@ -66,12 +66,12 @@ export function Work() {
               </h2>
               <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-start bg-main-red p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
-                  &quotFullstack Blog Project&quot è una piattaforma di blogging
-                  creata per offrire soluzioni complete di sviluppo web.
-                  Sviluppata come progetto finale del corso di programmazione
-                  fullstack, questa applicazione integra tecnologie frontend
-                  avanzate con robusti backend e pratiche DevOps per una
-                  gestione ottimale dei contenuti.
+                  &quot;Fullstack Blog Project&quot; è una piattaforma di
+                  blogging creata per offrire soluzioni complete di sviluppo
+                  web. Sviluppata come progetto finale del corso di
+                  programmazione fullstack, questa applicazione integra
+                  tecnologie frontend avanzate con robusti backend e pratiche
+                  DevOps per una gestione ottimale dei contenuti.
                 </p>
               </div>
               <h4 className="text-[12px] overflow-visible font-tech text-wrap sm:text-nowrap text-center">
