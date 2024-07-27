@@ -160,7 +160,7 @@ export function About() {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-[30%] h-full sm:relative group sm:left-5 top-20 sm:p-0 px-12 mx-5 sm:mx-0">
+            <div className="w-full sm:w-[30%] h-full sm:relative group sm:left-5 top-20 sm:p-0 px-12 mx-11 sm:mx-0">
               <div className="w-[200px] sm:w-[300px] sm:absolute z-10 overflow-hidden h-[250px] sm:h-[300px] rounded-lg hover:-top-2 hover:right-2 top-0 left-0 transition-all ease-in-out">
                 <div className="sm:absolute w-full sm:w-[255px] h-ful hover:bg-transparent transition-all ease-in-out rounded-lg"></div>
                 <img

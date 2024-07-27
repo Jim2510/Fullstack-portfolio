@@ -5,13 +5,19 @@ export function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const isMobile = () => window.innerWidth <= 640;
+
   const controlNavbar = () => {
-    if (window.scrollY === 0) {
+    if (isMobile()) {
       setIsVisible(true);
-    } else if (window.scrollY > lastScrollY) {
-      setIsVisible(false);
     } else {
-      setIsVisible(true);
+      if (window.scrollY === 0) {
+        setIsVisible(true);
+      } else if (window.scrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
     }
     setLastScrollY(window.scrollY);
   };
