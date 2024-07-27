@@ -66,12 +66,12 @@ export function Work() {
               </h2>
               <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-start bg-main-red p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
-                  &quot;Fullstack Blog Project&quot; è una piattaforma di
-                  blogging creata per offrire soluzioni complete di sviluppo
-                  web. Sviluppata come progetto finale del corso di
-                  programmazione fullstack, questa applicazione integra
-                  tecnologie frontend avanzate con robusti backend e pratiche
-                  DevOps per una gestione ottimale dei contenuti.
+                  &quot;The Loud Whisper&quot; is a blogging platform designed
+                  to provide comprehensive web development solutions. Developed
+                  as the final project for the fullstack programming course,
+                  this application integrates advanced frontend technologies
+                  with robust backends and DevOps practices for optimal content
+                  management.
                 </p>
               </div>
               <h4 className="text-[12px] overflow-visible font-tech text-wrap sm:text-nowrap text-center">
