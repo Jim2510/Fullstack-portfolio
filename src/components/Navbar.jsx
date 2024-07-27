@@ -4,6 +4,7 @@ import logo from "../../src/assets/Immagine_2024-07-08_181241-removebg-preview.p
 export function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollTimeout, setScrollTimeout] = useState(null);
 
   const isMobile = () => window.innerWidth <= 640;
 
@@ -11,13 +12,16 @@ export function Navbar() {
     if (isMobile()) {
       setIsVisible(true);
     } else {
-      if (window.scrollY === 0) {
-        setIsVisible(true);
-      } else if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollY) {
         setIsVisible(false);
-      } else {
-        setIsVisible(true);
       }
+
+      clearTimeout(scrollTimeout);
+      const timeoutId = setTimeout(() => {
+        setIsVisible(true);
+      }, 500);
+
+      setScrollTimeout(timeoutId);
     }
     setLastScrollY(window.scrollY);
   };
@@ -26,6 +30,7 @@ export function Navbar() {
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
+      clearTimeout(scrollTimeout);
     };
   }, [lastScrollY]);
 

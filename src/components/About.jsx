@@ -7,7 +7,7 @@ export function About() {
     <>
       <div className="w-full flex justify-center items-center" id="about">
         <div className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col py-32 gap-8 mx-10 sm:ml-44">
-          <div className="w-full flex sm:flex-row flex-col-reverse justify-center items-start gap-10">
+          <div className="w-full flex sm:flex-row flex-col-reverse justify-center items-start gap-10 md:mx-20 mx-0">
             <div className="sm:w-[50%] h-fit flex justify-start items-start flex-col">
               <div className="flex justify-start items-center w-full flex-wrap mb-10">
                 <h2 className="w-fit mr-2 text-3xl font-bold">
@@ -16,20 +16,20 @@ export function About() {
                 </h2>
                 <div className="w-full border-b-2 border-gray-50"></div>
               </div>
-              <p className="mb-4 sm:mb-10 text-start text-sm sm:text-base">
+              <p className="mb-4 sm:mb-10 text-justify sm:text-start text-sm sm:text-base">
                 I am Gianmarco, a certified Full-Stack Developer from Develhope.
                 During my studies, I had the opportunity to lead a team project,
                 where I honed my skills in collaboration, project management,
                 and problem-solving. This experience reinforced my passion for
                 building efficient and scalable web applications.
               </p>
-              <p className="mb-4 sm:mb-10 text-start text-sm sm:text-base">
+              <p className="mb-4 sm:mb-10 text-justify sm:text-start text-sm sm:text-base">
                 Currently, I am expanding my expertise by diving into Python
                 with a focus on machine learning. My career goal is to join an
                 innovative company where I can demonstrate my abilities and grow
                 as a junior developer.
               </p>
-              <p className="mb-4 sm:mb-10 text-start text-sm sm:text-base">
+              <p className="mb-4 sm:mb-10 text-justify sm:text-start text-sm sm:text-base">
                 In addition to my professional pursuits, I have a passion for
                 electronic music, technology, cinema, and nature, which fuels my
                 creativity and continuous learning.
