@@ -3,8 +3,8 @@ import coffee from "../assets/cup.png";
 export function LinkSocial() {
   return (
     <>
-      <div className=" group fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
-        <a href="https://buy.stripe.com/bIY6oOeGm1iBaUEbII">
+      <div className=" fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
+        <a href="https://buy.stripe.com/bIY6oOeGm1iBaUEbII" className="group ">
           <img
             src={coffee}
             alt="coffee"
