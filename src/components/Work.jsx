@@ -57,7 +57,7 @@ export function Work() {
             </div>
           </div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse mt-20">
-            <div className="col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-start z-10 py-4 text-end gap-4">
+            <div className="sm:order-1 order-2 col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-start z-10 py-4 text-end gap-4">
               <h4 className="font-tech text-second-red text-xl sm:text-base">
                 Fullstack Project
               </h4>
@@ -90,7 +90,7 @@ export function Work() {
                 </svg>
               </a>
             </div>
-            <div className="col-span-1 sm:col-span-4 h-fit sm:h-[350px] mx-auto  overflow-hidden relative sm:rounded-none rounded-md">
+            <div className="sm:order-2 order-1 col-span-1 sm:col-span-4 h-fit sm:h-[350px] mx-auto  overflow-hidden relative sm:rounded-none rounded-md">
               <img
                 src={blog}
                 alt="gestify"
