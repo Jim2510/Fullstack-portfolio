@@ -164,7 +164,7 @@ export function Work() {
               <h4 className="text-[12px] overflow-visible font-tech text-wrap sm:text-nowrap text-center">
                 Next - Node - ShopifyApi - GraphQL - Javascript
               </h4>
-              <a href="https://github.com/Jim2510/gestify_business_managment/tree/main">
+              <a href="https://github.com/Jim2510/retrova-ecom">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
