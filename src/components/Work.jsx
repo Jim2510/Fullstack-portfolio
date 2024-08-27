@@ -58,7 +58,7 @@ export function Work() {
               </a>
             </div>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse mt-20">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse sm:mt-20">
             <div className="sm:order-1 order-2 col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-start z-10 py-4 text-end gap-4">
               <h4 className="font-tech text-second-red text-xl sm:text-base">
                 Fullstack Project
@@ -140,7 +140,7 @@ export function Work() {
               </a>
             </div>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse mt-20">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse sm:mt-20">
             <div className="sm:order-1 order-2 col-span-1 sm:col-span-2 h-fit flex justify-center flex-col items-center sm:items-start z-10 py-4 text-end gap-4">
               <h4 className="font-tech text-second-red text-xl sm:text-base">
                 Fullstack Project
