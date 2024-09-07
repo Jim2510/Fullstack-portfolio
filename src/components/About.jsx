@@ -6,7 +6,7 @@ export function About() {
   return (
     <>
       <div className="w-full flex justify-center items-center" id="about">
-        <div className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col py-32 gap-8 px-10 sm:ml-44">
+        <div className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col sm:py-32 py-10 gap-8 px-10 sm:ml-44">
           <div className="w-full flex sm:flex-row flex-col-reverse justify-center items-start gap-10 md:mx-20 mx-0">
             <div className="sm:w-[50%] h-fit flex justify-start items-start flex-col">
               <div className="flex justify-start items-center w-full flex-wrap mb-10">
