@@ -18,13 +18,13 @@ const experienceData = {
     sec4: "This course provided me with a solid foundation in both frontend and backend technologies, preparing me to tackle complex projects in the real world.",
   },
   Other: {
-    title: "Other Experiences",
-    clrTitle: "Various Roles",
-    date: "January 2023 - Present",
-    sec1: "I'm working on various freelance projects and collaborated with different startups.",
-    sec2: "I contributed to the development of web and mobile applications, continuously improving my technical skills.",
-    sec3: "I participated in hackathons and workshops, expanding my professional network and learning new technologies.",
-    sec4: "These experiences have allowed me to grow as a developer and face diverse challenges in dynamic environments.",
+    title: "Fullstack developer",
+    clrTitle: "Norma's Teaching",
+    date: "October 2024 - Present",
+    sec1: "I work on the learning platform to offer services to both users and teachers.",
+    sec2: "Designing and developing scalable APIs for managing users, courses, and progress tracking.",
+    sec3: "Implementing secure authentication and authorization systems using GraphQL and MongoDB.",
+    sec4: "Structuring codebase using SOLID principles to create modular, reusable, and scalable components.",
   },
 };
 
