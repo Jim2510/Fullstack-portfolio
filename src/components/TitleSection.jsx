@@ -11,7 +11,7 @@ export function TitleSection() {
         className="w-full flex justify-center items-center mt-14"
         id="home"
       >
-        <div className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col pt-24 p-10 sm:p-32 gap-8">
+        <div className="w-full sm:w-[75%] h-screen text-white flex justify-center items-center flex-col pt-24 p-10 sm:p-32 gap-8">
           <h4 className="text-main-red self-start font-tech text-lg sm:text-xl -mb-5">
             Hi, my name is
           </h4>
