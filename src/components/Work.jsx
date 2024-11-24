@@ -26,13 +26,18 @@ export function Work() {
         id="work"
       >
         <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-0 sm:py-32 gap-8 ml-0 sm:ml-10">
-          <div className="flex justify-start items-center w-full flex-wrap sm:mb-10 mb-2">
+          <motion.div
+              initial={{opacity: 0, x: -150}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{duration: 1, delay: 0.2}}
+              viewport={{once: true}}
+              className="flex justify-start items-center w-full flex-wrap sm:mb-10 mb-2">
             <h2 className="w-fit mr-2 text-2xl sm:text-3xl font-bold">
               <span className="text-xl font-tech text-main-red">03.</span> Some
               of my works
             </h2>
             <div className="w-full border-b-2 border-gray-50"></div>
-          </div>
+          </motion.div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20">
             <motion.div
                 initial={{opacity: 0, x: -150}}

@@ -20,7 +20,7 @@ export function Experience() {
       >
         <motion.div initial={{ opacity: 0, y: 150 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.9 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                     viewport={{ once: true }} className="w-full sm:w-[54%] text-white flex justify-center items-center flex-col py-32 gap-8 ">
           <div className="w-full">
             <div className="flex justify-start items-center w-full flex-wrap mb-10">

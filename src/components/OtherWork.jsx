@@ -22,8 +22,9 @@ export function OtherWork() {
           <div className="grid-cols-1 grid sm:grid-cols-3 justify-center items-center w-full gap-6">
             <motion.div initial={{ opacity: 0, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.5 }}
-                        viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+                        whileHover={{scale: 1.1}}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +57,7 @@ export function OtherWork() {
                     service provided by the Hacker News API.
                   </h2>
                 </div>
-                <p className="font-tech text-xs text-gray-900 font-extrabold">
+                <p className="font-tech text-xs text-gray-400 font-extrabold">
                   Javascript - Html - Css - Lodash - Axios
                 </p>
               </div>
@@ -64,9 +65,10 @@ export function OtherWork() {
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.7 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                whileHover={{scale: 1.1}}
                 viewport={{ once: true }}
-                className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+                className="h-[300px] bg-main-red/40 backdrop-blur-2xl">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,15 +122,16 @@ export function OtherWork() {
                     electronic music and its current figures.
                   </h2>
                 </div>
-                <p className="font-tech text-xs text-gray-900 font-extrabold">
+                <p className="font-tech text-xs text-gray-400 font-extrabold">
                   Typescript - Nextjs - Sanity
                 </p>
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.9 }}
-                        viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+                        transition={{ duration: 1, delay: 0.2 }}
+                        whileHover={{scale: 1.1}}
+                        viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +167,7 @@ export function OtherWork() {
                     efficient and organized dining experience.
                   </h2>
                 </div>
-                <p className="font-tech text-xs text-gray-900 font-extrabold">
+                <p className="font-tech text-xs text-gray-400 font-extrabold">
                   Javascript - React - Bootstrap
                 </p>
               </div>
@@ -175,7 +178,7 @@ export function OtherWork() {
               isOpen ? "grid" : "hidden"
             }`}
           >
-            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -212,12 +215,12 @@ export function OtherWork() {
                     element arrangement.
                   </h2>
                 </div>
-                <p className="font-tech text-xs text-gray-900 font-extrabold">
+                <p className="font-tech text-xs text-gray-400 font-extrabold">
                   Javascript - Html - Css
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -275,12 +278,12 @@ export function OtherWork() {
                     efficient and optimized clients.
                   </h2>
                 </div>
-                <p className="font-tech text-xs text-gray-900 font-extrabold">
+                <p className="font-tech text-xs text-gray-400 font-extrabold">
                   Javascript - Tailwind - Html
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +318,7 @@ export function OtherWork() {
                     through a search bar and retrieve all relevant information.
                   </h2>
                 </div>
-                <p className="font-tech text-xs text-gray-900 font-extrabold">
+                <p className="font-tech text-xs text-gray-400 font-extrabold">
                   Javascript - OpenLibrary API
                 </p>
               </div>

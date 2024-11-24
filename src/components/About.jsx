@@ -9,7 +9,7 @@ export function About() {
       <div className="w-full flex justify-center items-center overflow-hidden" id="about">
         <motion.div initial={{ opacity: 0, y: 150 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.9 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                     viewport={{ once: true }} className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col sm:py-32 py-10 gap-8 px-10 sm:ml-44">
           <div className="w-full flex sm:flex-row flex-col-reverse justify-center items-start gap-10 md:mx-20 mx-0">
             <div className="sm:w-[50%] h-fit flex justify-start items-start flex-col">
