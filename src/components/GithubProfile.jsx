@@ -23,14 +23,14 @@ export function GithubProfile() {
     return (
         <>
             <div className="w-full h-screen md:h-[60vh] flex flex-col justify-center items-center gap-8 pb-20 overflow-hidden">
-                <div className="rounded-xl p-14 gap-8 w-[65%] h-full flex justify-center flex-col items-center backdrop-blur-2xl">
+                <div className="rounded-xl p-2 md:p-14 gap-8 w-full md:w-[65%] h-full flex justify-center flex-col items-center backdrop-blur-2xl">
                 <motion.div
                     initial={{ opacity: 0, x: -150 }}
                     whileHover={{scale: 1.2}}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="w-[90%] md:w-[50%] min-h-[200px] md:min-h-[180px] p-4 relative shadow-sm rounded-xl bg-black/40 shadow-main-red"
+                    className="w-full md:w-[50%] min-h-[200px] md:min-h-[180px] p-4 relative shadow-sm rounded-xl bg-black/40 shadow-main-red"
                 >
                     <p className="absolute top-4 right-4 text-white text-[0.5rem] md:text-xs font-bold">
                         Total contributions: {data.user.contributionsCollection.contributionCalendar.totalContributions}
