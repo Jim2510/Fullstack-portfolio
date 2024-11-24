@@ -23,19 +23,21 @@ export function GithubProfile() {
     return (
         <>
             <div className="w-full h-screen md:h-[60vh] flex flex-col justify-center items-center gap-8 pb-20 overflow-hidden">
+                <div className="rounded-xl p-14 gap-8 w-[65%] h-full flex justify-center flex-col items-center backdrop-blur-2xl">
                 <motion.div
                     initial={{ opacity: 0, x: -150 }}
+                    whileHover={{scale: 1.2}}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.9 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="w-[90%] md:w-[40%] min-h-[200px] md:min-h-[150px] p-4 bg-custom-green/40 backdrop-blur-2xl relative"
+                    className="w-[90%] md:w-[50%] min-h-[200px] md:min-h-[180px] p-4 relative shadow-sm rounded-xl bg-black/40 shadow-main-red"
                 >
                     <p className="absolute top-4 right-4 text-white text-[0.5rem] md:text-xs font-bold">
                         Total contributions: {data.user.contributionsCollection.contributionCalendar.totalContributions}
                     </p>
                     <div className="grid grid-cols-3 gap-2 p-0 md:p-2 w-full h-full">
                         <div className="col-span-1 rounded-full">
-                        <img src={data.user.avatarUrl} className="rounded-full w-[6.5rem] h-[6.5rem] ml-0 md:ml-10" />
+                        <img src={data.user.avatarUrl} className="rounded-full w-[6.5rem] h-[6.5rem] ml-0 " />
                         </div>
                         <div className="col-span-2 gap-2 flex flex-col text-white font-bold ml-10">
                             <p>{data.user.login}</p>
@@ -52,9 +54,10 @@ export function GithubProfile() {
                 <motion.div
                     initial={{ opacity: 0, x: 150 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: 0.7 }}
+                    whileHover={{scale: 1.2}}
+                    transition={{ duration: 1, delay: 0.3 }}
                     viewport={{ once: true }}
-                    className="bg-custom-green/40 rounded-lg p-4 backdrop-blur-2xl shadow-2xl md:w-fit w-[90%]"
+                    className="bg-black/60 rounded-lg p-4 backdrop-blur-2xl shadow-sm shadow-main-red md:w-fit w-[90%]"
                 >
                     <h1 className="text-white font-semibold">Contributions</h1>
                     <div className="flex gap-1 w-full overflow-x-auto p-2">
@@ -64,7 +67,7 @@ export function GithubProfile() {
                                 {week.contributionDays.map((day, i) => (
                                     <div
                                         key={i}
-                                        title={`${day.date}: ${day.contributionCount} contributions md:ml-0 ml-4`}
+                                        title={`${day.date}: ${day.contributionCount} contributions`}
                                         className={`w-4 h-4 md:w-3 md:h-3 rounded ${
                                             day.contributionCount > 0 ? "bg-green-500" : "bg-gray-200"
                                         }`}
@@ -74,7 +77,7 @@ export function GithubProfile() {
                         ))}
                     </div>
                 </motion.div>
-
+                </div>
                 <div className="absolute bottom-0 flex justify-center items-center">
                     <p className="text-center font-tech text-gray-400 hover:text-main-red text-sm pb-2">
                         Build by Gianmarco Guglielmino
