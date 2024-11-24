@@ -8,7 +8,7 @@ export function TitleSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 3 }}
         viewport={{ once: true }}
-        className="w-full flex justify-center items-center mt-14"
+        className="w-full flex justify-center items-center mt-14 overflow-hidden"
         id="home"
       >
         <div className="w-full sm:w-[75%] h-screen text-white flex justify-center items-center flex-col pt-24 p-10 sm:p-32 gap-8">

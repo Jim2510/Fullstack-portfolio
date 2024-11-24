@@ -7,6 +7,7 @@ import { Navbar } from "../components/Navbar";
 import { OtherWork } from "../components/OtherWork";
 import { TitleSection } from "../components/TitleSection";
 import { Work } from "../components/Work";
+import {GithubProfile} from "../components/GithubProfile.jsx";
 
 export function Mainpage() {
   return (
@@ -14,6 +15,7 @@ export function Mainpage() {
       <Animation />
       <Navbar />
       <TitleSection />
+        <GithubProfile />
       <LinkSocial />
       <About />
       <Experience />
