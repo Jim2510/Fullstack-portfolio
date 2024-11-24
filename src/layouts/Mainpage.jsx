@@ -12,8 +12,9 @@ import {Analytics} from "@vercel/analytics/react";
 
 export function Mainpage() {
   return (
-      <Analytics>
+
     <div className="scrollbar font-kumbh relative bg-gradient-to-br from-custom-dark via-custom-dark to-custom-green bg-cover overflow-y-auto">
+      <Analytics />
       <Animation />
       <Navbar />
       <TitleSection />
@@ -25,6 +26,6 @@ export function Mainpage() {
       <OtherWork />
       <Contact />
     </div>
-          </Analytics>
+
   );
 }
