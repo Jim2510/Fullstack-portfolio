@@ -1,12 +1,16 @@
 import photo from "../assets/IMG_20240627_134508_resized_20240627_015015515.jpg";
 import fe from "../assets/2d90c275-4833-418c-b285-abd686a4ad97.png";
 import fs from "../assets/fullstack-certificate.png";
+import { motion } from "framer-motion";
 
 export function About() {
   return (
     <>
-      <div className="w-full flex justify-center items-center" id="about">
-        <div className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col sm:py-32 py-10 gap-8 px-10 sm:ml-44">
+      <div className="w-full flex justify-center items-center overflow-hidden" id="about">
+        <motion.div initial={{ opacity: 0, y: 150 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.9 }}
+                    viewport={{ once: true }} className="w-full sm:w-[75%] text-white flex justify-center items-center flex-col sm:py-32 py-10 gap-8 px-10 sm:ml-44">
           <div className="w-full flex sm:flex-row flex-col-reverse justify-center items-start gap-10 md:mx-20 mx-0">
             <div className="sm:w-[50%] h-fit flex justify-start items-start flex-col">
               <div className="flex justify-start items-center w-full flex-wrap mb-10">
@@ -172,7 +176,7 @@ export function About() {
               <div className="sm:flex hidden transition-all ease-in-out group-hover:top-4 group-hover:left-4 border-[3px] rounded-t-lg rounded-bl-lg border-main-red w-[255px] h-[300px] absolute top-2 left-2 bg-transparent"></div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

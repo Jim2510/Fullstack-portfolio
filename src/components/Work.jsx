@@ -17,12 +17,12 @@ export function Work() {
   const closeModalTwo = () => setModalOpenTwo(false);
   const openModalThree = () => setModalOpenThree(true);
   const closeModalThree = () => setModalOpenThree(false);
-  const closeModalFour = () => setModalOpenFour(true);
+  const closeModalFour = () => setModalOpenFour(false);
   const openModalFour = () => setModalOpenFour(true);
   return (
     <>
       <div
-        className="w-full flex justify-center items-center sm:px-0 px-10"
+        className="w-full flex justify-center items-center sm:px-0 px-10 overflow-hidden"
         id="work"
       >
         <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-0 sm:py-32 gap-8 ml-0 sm:ml-10">
@@ -93,7 +93,7 @@ export function Work() {
                 Gestify - Business Management
               </h2>
               <div
-                  className="overflow-visible w-full sm:w-[500px] text-justify sm:text-end bg-main-red p-5 relative rounded-md shadow-2xl">
+                  className="overflow-visible w-full sm:w-[500px] text-justify sm:text-end bg-main-red/60 backdrop-blur-2xl p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
                   &quot;Gestify&quot; is a business management system designed
                   to provide efficient and customized solutions for commercial
@@ -133,7 +133,7 @@ export function Work() {
                 The Loud Whisper - Forum
               </h2>
               <div
-                  className="overflow-visible w-full sm:w-[500px] text-justify sm:text-start bg-main-red p-5 relative rounded-md shadow-2xl">
+                  className="overflow-visible w-full sm:w-[500px] text-justify sm:text-start bg-main-red/60 backdrop-blur-2xl p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
                   &quot;The Loud Whisper&quot; is a blogging platform designed
                   to provide comprehensive web development solutions. This
@@ -188,14 +188,14 @@ export function Work() {
                     {/* Modal Content */}
                     <motion.div
                         layoutId="blog-modal"
-                        className="fixed top-36 -translate-x-2/3 -ml-10 w-[90%] sm:w-[70%] h-auto max-h-[80%] z-50 overflow-hidden rounded-lg bg-white shadow-lg"
+                        className="cursor-pointer fixed top-36 -translate-x-2/3 -ml-10 w-[90%] sm:w-[70%] h-auto max-h-[80%] z-50 overflow-hidden rounded-lg bg-white shadow-lg"
                         initial={{opacity: 0, scale: 0.8}}
                         animate={{opacity: 1, scale: 1}}
                         exit={{opacity: 0, scale: 0.8}}
                         transition={{duration: 0.4}}
                         style={{transform: "translate(0%, 0%)"}}
                     >
-                      <img src={blog} alt="blog" className="w-full h-full object-contain"/>
+                      <img src={blog} alt="blog" className="w-full h-full object-contain cursor-pointer" />
                     </motion.div>
                   </>
               )}
@@ -228,7 +228,7 @@ export function Work() {
 
                     {/* Modal Content */}
                     <motion.div
-                        layoutId="blog-modal"
+                        layoutId="theme-modal"
                         className="fixed top-36 -translate-x-2/3 -ml-10 w-[90%] sm:w-[70%] h-auto max-h-[80%] z-50 overflow-hidden rounded-lg bg-white shadow-lg"
                         initial={{opacity: 0, scale: 0.8}}
                         animate={{opacity: 1, scale: 1}}
@@ -252,7 +252,7 @@ export function Work() {
               <h2 className=" sm:text-xl font-extrabold text-wrap text-center sm:text-nowrap text-2xl">
                 DYWMD - Dark
               </h2>
-              <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-end bg-main-red p-5 relative rounded-md shadow-2xl">
+              <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-end bg-main-red/60 backdrop-blur-2xl p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
                   DYWM Dark is a VS Code color theme crafted to share one of my
                   favorite palettes with the community. It enhances visibility
@@ -290,7 +290,7 @@ export function Work() {
               <h2 className=" sm:text-xl font-extrabold text-wrap text-center sm:text-nowrap text-2xl">
                 Retrova e-commerce
               </h2>
-              <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-start bg-main-red p-5 relative rounded-md shadow-2xl">
+              <div className="overflow-visible w-full sm:w-[500px] text-justify sm:text-start bg-main-red/60 backdrop-blur-2xl p-5 relative rounded-md shadow-2xl">
                 <p className="text-sm font-semibold">
                   &quot;Retrova&quot; represents my first independent project,
                   undertaken in collaboration with a Sicilian startup to create
@@ -323,13 +323,41 @@ export function Work() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                         viewport={{ once: true }}
+                        onClick={openModalFour}
                         layoutId="modal" className="sm:order-2 order-1 col-span-1 sm:col-span-4 h-fit sm:h-[350px] mx-auto  overflow-hidden relative sm:rounded-none rounded-md">
               <img
                 src={retrova}
-                alt="gestify"
+                alt="retrova"
                 className="w-full h-full  object-cover sm:object-contain"
               />
             </motion.div>
+            <AnimatePresence>
+              {isModalOpenFour && (
+                  <>
+                    {/* Overlay */}
+                    <motion.div
+                        className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50"
+                        onClick={closeModalFour} // Close modal on clicking the overlay
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        exit={{opacity: 0}}
+                    ></motion.div>
+
+                    {/* Modal Content */}
+                    <motion.div
+                        layoutId="retrova-modal"
+                        className="fixed top-36 -translate-x-2/3 -ml-10 w-[90%] sm:w-[70%] h-auto max-h-[80%] z-50 overflow-hidden rounded-lg bg-white shadow-lg"
+                        initial={{opacity: 0, scale: 0.8}}
+                        animate={{opacity: 1, scale: 1}}
+                        exit={{opacity: 0, scale: 0.8}}
+                        transition={{duration: 0.4}}
+                        style={{transform: "translate(0%, 0%)"}}
+                    >
+                      <img src={retrova} alt="retrova" className="w-full h-full object-contain"/>
+                    </motion.div>
+                  </>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>

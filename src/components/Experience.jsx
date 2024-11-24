@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ExpText } from "./ExpText";
 import experienceData from "../data/exp";
+import { motion } from "framer-motion";
 
 export function Experience() {
   const [activeButton, setActiveButton] = useState("Start2Impact");
@@ -14,10 +15,13 @@ export function Experience() {
   return (
     <>
       <div
-        className="w-full flex justify-center items-center sm:mx-0 sm:px-0 px-10"
+        className="w-full flex justify-center items-center sm:mx-0 sm:px-0 px-10 overflow-hidden"
         id="experience"
       >
-        <div className="w-full sm:w-[54%] text-white flex justify-center items-center flex-col py-32 gap-8 ">
+        <motion.div initial={{ opacity: 0, y: 150 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.9 }}
+                    viewport={{ once: true }} className="w-full sm:w-[54%] text-white flex justify-center items-center flex-col py-32 gap-8 ">
           <div className="w-full">
             <div className="flex justify-start items-center w-full flex-wrap mb-10">
               <h2 className="w-fit mr-2 text-3xl font-bold">
@@ -64,7 +68,7 @@ export function Experience() {
               <ExpText {...currentData} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

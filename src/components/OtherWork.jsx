@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import {Button} from "../UI/Button.jsx";
 
 export function OtherWork() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +12,7 @@ export function OtherWork() {
   return (
     <>
       <div
-        className="w-full flex justify-center items-center px-10 sm:px-0"
+        className="w-full flex justify-center items-center px-10 sm:px-0 overflow-hidden"
         id="experience"
       >
         <div className="w-full sm:w-[65%] text-white flex justify-center items-center flex-col py-32 gap-8 ml-0">
@@ -18,7 +20,10 @@ export function OtherWork() {
             <h2 className="w-fit mr-2 text-3xl font-bold">Other Projects</h2>
           </div>
           <div className="grid-cols-1 grid sm:grid-cols-3 justify-center items-center w-full gap-6">
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <motion.div initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +60,13 @@ export function OtherWork() {
                   Javascript - Html - Css - Lodash - Axios
                 </p>
               </div>
-            </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.7 }}
+                viewport={{ once: true }}
+                className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +124,11 @@ export function OtherWork() {
                   Typescript - Nextjs - Sanity
                 </p>
               </div>
-            </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.9 }}
+                        viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -155,14 +168,14 @@ export function OtherWork() {
                   Javascript - React - Bootstrap
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div
             className={`grid grid-cols-1 sm:grid-cols-3 justify-center items-center w-full gap-6 ${
               isOpen ? "grid" : "hidden"
             }`}
           >
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +217,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +280,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-            <div className="h-[300px] bg-main-red/80 rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
+            <div className="h-[300px] bg-main-red/40 backdrop-blur-2xl rounded-md hover:scale-100 sm:hover:scale-105 transition-all ease-in-out">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -309,12 +322,7 @@ export function OtherWork() {
             </div>
           </div>
           <div className="relative mt-10">
-            <button
-              onClick={handleOpen}
-              className="hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-2 font-tech text-emerald-400"
-            >
-              {isOpen ? "Show Less" : "Show More"}
-            </button>
+            <Button label={isOpen ? "Show Less" : "Show More"} onClick={handleOpen} />
           </div>
         </div>
       </div>
