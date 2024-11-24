@@ -9,12 +9,14 @@ import { TitleSection } from "../components/TitleSection";
 import { Work } from "../components/Work";
 import {GithubProfile} from "../components/GithubProfile.jsx";
 import {Analytics} from "@vercel/analytics/react";
+import {SpeedInsights} from "@vercel/speed-insights/react";
 
 export function Mainpage() {
   return (
 
     <div className="scrollbar font-kumbh relative bg-gradient-to-br from-custom-dark via-custom-dark to-custom-green bg-cover overflow-y-auto">
-      <Analytics />
+      <SpeedInsights />
+        <Analytics />
       <Animation />
       <Navbar />
       <TitleSection />
