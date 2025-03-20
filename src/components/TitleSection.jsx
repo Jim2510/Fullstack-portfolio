@@ -11,11 +11,11 @@ export function TitleSection() {
         className="w-full flex justify-center items-center mt-14 overflow-hidden"
         id="home"
       >
-        <div className="w-full sm:w-[75%] h-screen text-white flex justify-center items-center flex-col pt-24 p-10 sm:p-32 gap-8">
-          <h4 className="text-main-red self-start font-tech text-lg sm:text-xl -mb-5">
+        <div className="w-full sm:w-[75%] h-screen text-white flex justify-center items-center flex-col pt-24 p-10 sm:p-32 md:pl-48 lg:pl-48 xl:pl-48 2xl:pl-72 gap-8">
+          <h4 className="text-main-red self-start font-tech text-lg sm:text-xl md:text-2xl -mb-5">
             Hi, my name is
           </h4>
-          <h1 className="text-start sm:self-start text-4xl sm:text-6xl -mb-5 font-extrabold">
+          <h1 className="text-start sm:self-start md:text-7xl text-4xl sm:text-6xl -mb-5 font-extrabold text-nowrap">
             Gianmarco Guglielmino.
           </h1>
           <h2 className=" self-start text-2xl text-center sm:text-5xl font-bold">

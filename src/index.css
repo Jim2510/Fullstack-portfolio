@@ -72,7 +72,7 @@ body {
   animation: fadeOut 2s forwards 1s;
 }
 
-// SCROLLBAR
+/* ScrollBar */
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

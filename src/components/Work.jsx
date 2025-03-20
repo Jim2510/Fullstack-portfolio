@@ -124,7 +124,7 @@ export function Work() {
               </a>
             </motion.div>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse sm:mt-20">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse sm:mt-24">
             <motion.div initial={{opacity: 0, x: -150}}
                         whileInView={{opacity: 1, x: 0}}
                         transition={{duration: 1, delay: 0.8}}
@@ -206,7 +206,7 @@ export function Work() {
               )}
             </AnimatePresence>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 sm:mt-24">
             <motion.div initial={{ opacity: 0, x: -150 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -283,7 +283,7 @@ export function Work() {
               </a>
             </motion.div>
           </div>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse sm:mt-20">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-6 gap-0 sm:gap-20 flex-row-reverse sm:mt-24">
             <motion.div initial={{ opacity: 0, x: -150 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.8 }}
