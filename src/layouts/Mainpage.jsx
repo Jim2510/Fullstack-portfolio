@@ -3,13 +3,13 @@ import { Animation } from "../components/Animation";
 import { Contact } from "../components/Contact";
 import { Experience } from "../components/Experience";
 import { LinkSocial } from "../components/LinkSocial";
-import { Navbar } from "../components/Navbar";
 import { OtherWork } from "../components/OtherWork";
 import { TitleSection } from "../components/TitleSection";
 import { Work } from "../components/Work";
 import {GithubProfile} from "../components/GithubProfile.jsx";
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";
+import {Navbar} from "../components/Navbar.jsx";
 
 export function Mainpage() {
   return (

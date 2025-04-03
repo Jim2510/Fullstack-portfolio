@@ -26,7 +26,7 @@ export function GithubProfile() {
                 <motion.div
                     initial={{opacity: 0, x: 150}}
                     whileInView={{opacity: 1, x: 0}}
-                    transition={{duration: 1, delay: 0.2}}
+                    transition={{duration: 1}}
                     viewport={{once: true}}
                     className="w-full flex justify-center px-10 md:p-10 md:mt-0 mt-20 overflow-hidden">
                     <div className="flex justify-start items-center w-full md:w-[50%] flex-wrap mb-2 md:mb-10">
@@ -43,9 +43,8 @@ export function GithubProfile() {
                         className="rounded-xl p-2 md:p-14 gap-8 w-full md:w-[65%] h-full flex justify-center flex-col items-center backdrop-blur-2xl">
                         <motion.div
                             initial={{opacity: 0, x: -150}}
-                            whileHover={{scale: 1.2}}
                             whileInView={{opacity: 1, x: 0}}
-                            transition={{duration: 1, delay: 0.2}}
+                            transition={{duration: 1}}
                             viewport={{once: true}}
                             className="w-[90%] md:w-[50%] min-h-[200px] md:min-h-[180px] p-4 relative shadow-sm rounded-xl bg-black/40 shadow-main-red"
                         >
@@ -73,8 +72,7 @@ export function GithubProfile() {
                         <motion.div
                             initial={{opacity: 0, x: 150}}
                             whileInView={{opacity: 1, x: 0}}
-                            whileHover={{scale: 1.2}}
-                            transition={{duration: 1, delay: 0.3}}
+                            transition={{duration: 1}}
                             viewport={{once: true}}
                             className="bg-black/60 rounded-lg p-4 backdrop-blur-2xl shadow-sm shadow-main-red md:w-fit w-[90%]"
                         >

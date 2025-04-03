@@ -15,7 +15,7 @@ export function TitleSection() {
           <h4 className="text-main-red self-start font-tech text-lg sm:text-xl md:text-2xl -mb-5">
             Hi, my name is
           </h4>
-          <h1 className="text-start sm:self-start md:text-7xl text-4xl sm:text-6xl -mb-5 font-extrabold text-nowrap">
+          <h1 className="text-start sm:self-start md:text-7xl text-4xl sm:text-6xl -mb-5 font-extrabold text-wrap sm:text-nowrap">
             Gianmarco Guglielmino.
           </h1>
           <h2 className=" self-start text-2xl text-center sm:text-5xl font-bold">
