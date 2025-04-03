@@ -17,7 +17,7 @@ const experienceData = {
     sec3: "I collaborated with other developers to build scalable and secure applications.",
     sec4: "This course provided me with a solid foundation in both frontend and backend technologies, preparing me to tackle complex projects in the real world.",
   },
-  Other: {
+  Normasteaching: {
     title: "Fullstack developer",
     clrTitle: "Norma's Teaching",
     date: "October 2024 - Present",

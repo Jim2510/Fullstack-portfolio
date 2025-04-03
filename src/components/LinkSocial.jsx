@@ -10,7 +10,7 @@ export function LinkSocial() {
             initial={{opacity: 0, y: 150}}
             whileHover={{scale: 1.2}}
             whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 1, delay: 3.5}}
+            transition={{duration: 0.6}}
             className=" fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
           <a href="https://buymeacoffee.com/gianmarcog" className="group " onMouseEnter={() => setOpen(true)}
              onMouseLeave={() => setOpen(false)}>
@@ -21,7 +21,7 @@ export function LinkSocial() {
             />
             <motion.div
                 animate={{opacity: open ? 1 : 0}}
-                transition={{duration: 0.2, delay: 0.5}}
+                transition={{duration: 0.2}}
                 className=" justify-center items-center absolute opacity-0 text-white font-bold -top-12 -right-16 text-xs text-center rounded-2xl bg-main-red/40 backdrop-blur-2xl py-1 w-[150px] ">
               Buy me a coffee!
             </motion.div>
