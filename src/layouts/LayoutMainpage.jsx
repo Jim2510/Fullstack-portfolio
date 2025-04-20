@@ -30,8 +30,8 @@ export function LayoutMainpage() {
       <TitleSection refForm={refForm} />
         {view >= 768 && <GithubProfile />}
       <LinkSocial />
-      <About />
-      <Experience refScroll={refForm}/>
+      <About refAbout={refForm} />
+      <Experience/>
       <Work />
       <OtherWork />
       <Contact />

@@ -3,10 +3,11 @@ import fe from "../assets/2d90c275-4833-418c-b285-abd686a4ad97.png";
 import fs from "../assets/fullstack-certificate.png";
 import { motion } from "framer-motion";
 
-export function About() {
+// eslint-disable-next-line react/prop-types
+export function About({refAbout}) {
   return (
     <>
-      <div className="w-full flex justify-center items-center overflow-hidden" id="about">
+      <div ref={refAbout} className="w-full flex justify-center items-center overflow-hidden" id="about">
         <motion.div initial={{ opacity: 0, y: 150 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
