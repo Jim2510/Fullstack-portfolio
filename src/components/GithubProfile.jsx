@@ -40,7 +40,7 @@ export function GithubProfile() {
                 <div
                     className="w-full h-[80vh] md:h-[60vh] flex flex-col justify-center items-center gap-8 pb-20 overflow-hidden">
                     <div
-                        className="rounded-xl p-2 md:p-14 gap-8 w-full md:w-[65%] h-full flex justify-center flex-col items-center backdrop-blur-2xl">
+                        className="rounded-xl p-2 md:p-14 gap-16 w-full md:w-[65%] h-full flex justify-center flex-col items-center backdrop-blur-2xl">
                         <motion.div
                             initial={{opacity: 0, x: -150}}
                             whileInView={{opacity: 1, x: 0}}
@@ -51,16 +51,16 @@ export function GithubProfile() {
                             <p className="absolute top-4 right-10 text-white text-[0.45rem] md:text-xs font-bold">
                                 contributions: {data.user.contributionsCollection.contributionCalendar.totalContributions}
                             </p>
-                            <div className="grid grid-cols-3 gap-2 p-0 md:p-2 w-full h-full md:mt-0 mt-6">
+                            <div className="grid grid-cols-3 justify-center items-center gap-2 p-0 md:p-2 w-full h-full md:mt-0 mt-6">
                                 <div className="col-span-1 rounded-full ">
                                     <img src={data.user.avatarUrl}
-                                         className="rounded-full w-full h-auto ml-0 shadow-main-red shadow-lg"/>
+                                         className="rounded-full w-[80%] h-auto ml-0 shadow-main-red shadow-lg"/>
                                 </div>
                                 <div className="col-span-2 gap-2 flex flex-col text-white font-bold ml-10">
                                     <p>{data.user.login}</p>
                                     <p className="text-xs md:text-sm">Repositories: {data.user.repositories.totalCount}</p>
                                     <p className="text-xs md:text-sm">{data.user.bio}</p>
-                                    <div className="flex text-xs gap-4 absolute bottom-8">
+                                    <div className="flex text-xs gap-4 absolute bottom-4">
                                         <p>Followers: {data.user.followers.totalCount}</p>
                                         <p>Following: {data.user.following.totalCount}</p>
                                     </div>

@@ -3,7 +3,8 @@ import { ExpText } from "./ExpText";
 import experienceData from "../data/exp";
 import { motion } from "framer-motion";
 
-export function Experience() {
+// eslint-disable-next-line react/prop-types
+export function Experience({refScroll}) {
   const [activeButton, setActiveButton] = useState("Start2Impact");
 
   const handleButtonClick = (buttonName) => {
@@ -15,6 +16,7 @@ export function Experience() {
   return (
     <>
       <div
+          ref={refScroll}
         className="w-full flex justify-center items-center sm:mx-0 sm:px-0 px-10 overflow-hidden"
         id="experience"
       >

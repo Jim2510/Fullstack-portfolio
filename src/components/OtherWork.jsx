@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {Button} from "../UI/Button.jsx";
+import {CtaButton} from "../UI/CtaButton.jsx";
 
 export function OtherWork() {
   const [isOpen, setIsOpen] = useState(false);
@@ -325,7 +326,7 @@ export function OtherWork() {
             </div>
           </motion.div>
           <div className="relative mt-10">
-            <Button label={isOpen ? "Show Less" : "Show More"} onClick={handleOpen} />
+            <CtaButton label={isOpen ? "Show Less" : "Show More"} onClick={handleOpen} bottomNum="100" />
           </div>
         </div>
       </div>

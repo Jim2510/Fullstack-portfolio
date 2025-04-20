@@ -1,4 +1,4 @@
-import photo from "../assets/IMG_20240627_134508_resized_20240627_015015515.jpg";
+import photo from "../assets/photo.png";
 import fe from "../assets/2d90c275-4833-418c-b285-abd686a4ad97.png";
 import fs from "../assets/fullstack-certificate.png";
 import { motion } from "framer-motion";
@@ -39,20 +39,45 @@ export function About() {
                 creativity and continuous learning.
               </p>
               <div className="mb-10 flex gap-2">
-                <a
+                <motion.a
+                    initial={{
+                      y: -20,
+                      opacity: 0,
+                      backgroundImage: "linear-gradient(to bottom, #008170, #00FFD1)",
+                    }}
+                    whileInView={{
+                      y: 0,
+                      opacity: 1,
+                    }}
+                    whileTap={{
+                      backgroundImage: "linear-gradient(to bottom, #00FFD1, #008170)",
+                    }}
+                    viewport={{once: true}}
                   download
                   href={fe}
-                  className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-3 hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-1 font-tech text-emerald-400"
+                  className="transition-all ease-in-out text-black cursor-pointer mt-3 hover:bottom-2 rounded-md px-4 py-1 font-tech"
                 >
                   Front-end Certificate
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                    initial={{
+                      y: -20,
+                      opacity: 0,
+                      backgroundImage: "linear-gradient(to bottom, #008170, #00FFD1)",
+                    }}
+                    whileInView={{
+                      y: 0,
+                      opacity: 1,
+                    }}
+                    whileTap={{
+                      backgroundImage: "linear-gradient(to bottom, #00FFD1, #008170)",
+                    }}
+                    viewport={{once: true}}
                   download
                   href={fs}
-                  className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-3 hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-1 font-tech text-emerald-400"
-                >
+                    className="transition-all ease-in-out text-black cursor-pointer mt-3 hover:bottom-2 rounded-md px-4 py-1 font-tech"                >
                   FullStack Certificate
-                </a>
+                </motion.a>
               </div>
               <p className="mb-5 text-sm sm:text-base">
                 Here are a few technologies I’ve been working with recently:
@@ -170,7 +195,7 @@ export function About() {
                 <img
                   src={photo}
                   alt="photo"
-                  className="h-full sm:h-[341px] sm:w-[255px] w-full sm:rounded-md object-fill sm:border-none border-4 border-main-red"
+                  className="h-full sm:h-[341px] sm:w-[255px] w-full sm:rounded-md object-cover sm:border-none border-4 border-main-red"
                 />
               </div>
               <div className="sm:flex hidden transition-all ease-in-out group-hover:top-4 group-hover:left-4 border-[3px] rounded-t-lg rounded-bl-lg border-main-red w-[255px] h-[300px] absolute top-2 left-2 bg-transparent"></div>

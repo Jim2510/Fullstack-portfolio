@@ -3,6 +3,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../UI/Button.jsx";
+import {CtaButton} from "../UI/CtaButton.jsx";
 
 export function Contact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,8 @@ export function Contact() {
                 hello, I’ll do my best to respond promptly!
               </p>
               <div className="relative mt-10">
-                <Button label="Say Hello!" onClick={handleForm} />
+                {/*<Button label="Say Hello!" onClick={handleForm} />*/}
+                <CtaButton label="Say Hello!" onClick={handleForm} />
               </div>
             </div>
           </div>

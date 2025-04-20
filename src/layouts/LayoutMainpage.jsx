@@ -10,10 +10,11 @@ import {GithubProfile} from "../components/GithubProfile.jsx";
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import {Navbar} from "../components/Navbar.jsx";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 export function LayoutMainpage() {
     const [view, setView] = useState(window.innerWidth);
+    const refForm = useRef(null);
 
     useEffect(() => {
         const handleResize = () => setView(window.innerWidth);
@@ -26,11 +27,11 @@ export function LayoutMainpage() {
         <Analytics />
       <Animation />
       <Navbar />
-      <TitleSection />
+      <TitleSection refForm={refForm} />
         {view >= 768 && <GithubProfile />}
       <LinkSocial />
       <About />
-      <Experience />
+      <Experience refScroll={refForm}/>
       <Work />
       <OtherWork />
       <Contact />

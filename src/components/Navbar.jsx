@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../../src/assets/Immagine_2024-07-08_181241-removebg-preview.png";
 import pdf from "../assets/CV_GuglielminoGianmarco.pdf";
+import {motion} from "framer-motion";
 
 export function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -85,13 +86,26 @@ export function Navbar() {
               </a>
             </button>
           ))}
-          <a
+          <motion.a
+              initial={{
+                y: -20,
+                opacity: 0,
+                backgroundImage: "linear-gradient(to bottom, #008170, #00FFD1)",
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              whileTap={{
+                backgroundImage: "linear-gradient(to bottom, #00FFD1, #008170)",
+              }}
+              viewport={{once: true}}
             download
             href={pdf}
-            className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-2 hover:bottom-2 bg-custom-green border-[2px] rounded-md sm:text-base text-sm border-main-red px-2 sm:px-4 py-1 font-tech text-emerald-400 mx-4 mb-2"
+            className="transition-all ease-in-out text-black cursor-pointer mt-2 hover:bottom-2 rounded-md sm:text-base text-sm px-2 sm:px-4 py-1 font-tech mx-4 mb-2"
           >
             RESUME
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import {motion} from "framer-motion";
 
 // eslint-disable-next-line react/prop-types
-export function CtaButton({ label, onClick}) {
+export function CtaButton({ label, onClick, bottomNum, bottomNumMq}) {
+
 return (
     <>
         <motion.button onClick={onClick}
@@ -18,7 +19,7 @@ return (
                 backgroundImage: "linear-gradient(to bottom, #00FFD1, #008170)",
             }}
             viewport={{once: true}}
-            className="text-black relative bottom-20 sm:bottom-40 px-7 py-2 sm:text-xl rounded-md"
+            className={`text-black relative bottom-${bottomNumMq} sm:bottom-${bottomNum} px-7 py-2 sm:text-xl rounded-md font-tech`}
         >
             {label}
         </motion.button>
