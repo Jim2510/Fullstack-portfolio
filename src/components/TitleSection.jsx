@@ -9,8 +9,56 @@ export function TitleSection({ refForm }) {
         <>
             <div className="relative w-full overflow-hidden z-0">
                 {/* Curva inferiore animata */}
+
                 <svg
-                    className="absolute bottom-0 left-0 w-full z-10"
+                    className="absolute mt-30 sm:top-0 left-0 w-full z-10 shadow-inner overflow-visible"
+                    viewBox="0 0 350 200"
+                    preserveAspectRatio="none"
+                >
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <motion.stop
+                                offset="0%"
+                                stopColor="#008170"
+                                animate={{stopColor: ["#008170", "#00FFD1", "#00B894", "#008170"]}}
+                                transition={{duration: 8, repeat: Infinity, ease: "easeInOut"}}
+                            />
+                            <motion.stop
+                                offset="50%"
+                                stopColor="#00FFD1"
+                                animate={{stopColor: ["#00FFD1", "#00B894", "#008170", "#00FFD1"]}}
+                                transition={{duration: 10, repeat: Infinity, ease: "easeInOut"}}
+                            />
+                            <motion.stop
+                                offset="100%"
+                                stopColor="#00B894"
+                                animate={{stopColor: ["#00B894", "#008170", "#00FFD1", "#00B894"]}}
+                                transition={{duration: 12, repeat: Infinity, ease: "easeInOut"}}
+                            />
+                        </linearGradient>
+                    </defs>
+
+                    <motion.circle
+                        cx="100"
+                        cy="100"
+                        r="90"
+                        fill="url(#gradient1)"
+                        animate={{
+                            r: [90, 110, 90],
+                            cx: [100, 120, 100],
+                            cy: [100, 120, 100],
+                        }}
+                        transition={{
+                            duration: 10,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                    />
+                </svg>
+
+
+                <svg
+                    className="sm:flex hidden absolute bottom-0 left-0 w-full z-10 shadow-2xl"
                     viewBox="0 0 540 320"
                     preserveAspectRatio="none"
                 >
@@ -19,28 +67,28 @@ export function TitleSection({ refForm }) {
                             <motion.stop
                                 offset="0%"
                                 stopColor="#008170"
-                                animate={{ stopColor: ["#008170", "#00FFD1", "#00B894", "#008170"] }}
-                                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                                animate={{stopColor: ["#008170", "#00FFD1", "#00B894", "#008170"]}}
+                                transition={{duration: 8, repeat: Infinity, ease: "easeInOut"}}
                             />
                             <motion.stop
                                 offset="50%"
                                 stopColor="#00FFD1"
-                                animate={{ stopColor: ["#00FFD1", "#00B894", "#008170", "#00FFD1"] }}
-                                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                                animate={{stopColor: ["#00FFD1", "#00B894", "#008170", "#00FFD1"]}}
+                                transition={{duration: 10, repeat: Infinity, ease: "easeInOut"}}
                             />
                             <motion.stop
                                 offset="100%"
                                 stopColor="#00B894"
-                                animate={{ stopColor: ["#00B894", "#008170", "#00FFD1", "#00B894"] }}
-                                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+                                animate={{stopColor: ["#00B894", "#008170", "#00FFD1", "#00B894"]}}
+                                transition={{duration: 12, repeat: Infinity, ease: "easeInOut"}}
                             />
                         </linearGradient>
 
                         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                            <feGaussianBlur stdDeviation="30" result="coloredBlur" />
+                            <feGaussianBlur stdDeviation="30" result="coloredBlur"/>
                             <feMerge>
-                                <feMergeNode in="coloredBlur" />
-                                <feMergeNode in="SourceGraphic" />
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
                             </feMerge>
                         </filter>
                     </defs>
@@ -65,10 +113,10 @@ export function TitleSection({ refForm }) {
                 </svg>
 
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 3 }}
-                    viewport={{ once: true }}
+                    initial={{opacity: 0, y: 50}}
+                    whileInView={{opacity: 1, y: 0}}
+                    transition={{duration: 1, delay: 3}}
+                    viewport={{once: true}}
                     className="w-full flex flex-col relative justify-center items-center sm:mt-5 overflow-hidden z-20"
                     id="home"
                 >
@@ -108,8 +156,9 @@ export function TitleSection({ refForm }) {
                                    whileTap={{
                                        backgroundImage: "linear-gradient(to bottom, #00FFD1, #008170)",
                                    }}
-                                   viewport={{ once: true }}
-                                   className={`text-black relative px-7 py-2 sm:text-lg rounded-md font-tech bottom-40 mt-20 sm:bottom-60 sm:mt-10 z-20`}>DISCOVER</motion.button>
+                                   viewport={{once: true}}
+                                   className={`text-black relative px-7 py-2 sm:text-lg rounded-md font-tech bottom-40 mt-20 sm:bottom-60 sm:mt-10 z-20`}>DISCOVER
+                    </motion.button>
                 </motion.div>
             </div>
         </>
