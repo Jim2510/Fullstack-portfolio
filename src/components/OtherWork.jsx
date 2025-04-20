@@ -23,7 +23,7 @@ export function OtherWork() {
             <motion.div initial={{ opacity: 0, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         whileHover={{scale: 1.1}}
-                        transition={{ duration: 1, delay: 0.2 }}
+                        transition={{ duration: 0.3}}
                         viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl">
               <div className="flex justify-between items-center p-10 pb-4">
                 <svg
@@ -65,7 +65,7 @@ export function OtherWork() {
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.2 }}
+                transition={{ duration: 0.3}}
                 whileHover={{scale: 1.1}}
                 viewport={{ once: true }}
                 className="h-[300px] bg-main-red/40 backdrop-blur-2xl">
@@ -129,7 +129,7 @@ export function OtherWork() {
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
+                        transition={{ duration: 0.3}}
                         whileHover={{scale: 1.1}}
                         viewport={{ once: true }} className="h-[300px] bg-main-red/40 backdrop-blur-2xl">
               <div className="flex justify-between items-center p-10 pb-4">
@@ -173,7 +173,7 @@ export function OtherWork() {
               </div>
             </motion.div>
           </div>
-          <div
+          <motion.div initial={{y: -100, opacity: 0}} animate={isOpen ? {y:0, opacity:1} : {y: -100, opacity: 0}}
             className={`grid grid-cols-1 sm:grid-cols-3 justify-center items-center w-full gap-6 ${
               isOpen ? "grid" : "hidden"
             }`}
@@ -323,7 +323,7 @@ export function OtherWork() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="relative mt-10">
             <Button label={isOpen ? "Show Less" : "Show More"} onClick={handleOpen} />
           </div>

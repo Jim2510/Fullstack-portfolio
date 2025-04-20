@@ -10,9 +10,16 @@ import {GithubProfile} from "../components/GithubProfile.jsx";
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import {Navbar} from "../components/Navbar.jsx";
+import {useEffect, useState} from "react";
 
-export function Mainpage() {
-  return (
+export function LayoutMainpage() {
+    const [view, setView] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setView(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);  return (
 
     <div className="scrollbar font-kumbh relative bg-gradient-to-br from-custom-dark via-custom-dark to-custom-green bg-cover overflow-y-auto">
       <SpeedInsights />
@@ -20,7 +27,7 @@ export function Mainpage() {
       <Animation />
       <Navbar />
       <TitleSection />
-        <GithubProfile />
+        {view >= 768 && <GithubProfile />}
       <LinkSocial />
       <About />
       <Experience />

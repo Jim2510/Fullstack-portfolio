@@ -11,6 +11,7 @@ export default {
         "custom-green": "#232D3F ",
         "main-red": "#008170",
         "second-red": "#005B41",
+        "third-green": "#00ffb3",
       },
       fontFamily: {
         kumbh: ["Kumbh Sans", "sans-serif"],

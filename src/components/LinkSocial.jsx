@@ -8,7 +8,6 @@ export function LinkSocial() {
       <>
         <motion.div
             initial={{opacity: 0, y: 150}}
-            whileHover={{scale: 1.2}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 0.6}}
             className=" fixed bottom-0 flex flex-col left-2 sm:left-40 gap-4 justify-center items-center z-40">
@@ -100,7 +99,6 @@ export function LinkSocial() {
         </motion.div>
         <motion.div
             initial={{opacity: 0, y: 150}}
-            whileHover={{scale: 1.2}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 1, delay: 3.5}}
             className="fixed bottom-0 flex flex-col right-[-4.5rem] sm:right-10 gap-24 justify-center items-center z-40">

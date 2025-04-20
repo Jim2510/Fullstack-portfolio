@@ -22,7 +22,7 @@ export function GithubProfile() {
 
     return (
         <>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden pt-20">
                 <motion.div
                     initial={{opacity: 0, x: 150}}
                     whileInView={{opacity: 1, x: 0}}
@@ -46,10 +46,9 @@ export function GithubProfile() {
                             whileInView={{opacity: 1, x: 0}}
                             transition={{duration: 1}}
                             viewport={{once: true}}
-                            className="w-[90%] md:w-[50%] min-h-[200px] md:min-h-[180px] p-4 relative shadow-sm rounded-xl bg-black/40 shadow-main-red"
+                            className="w-[90%] md:w-[50%] min-h-[200px] md:min-h-[180px] overflow-hidden p-4 relative shadow-sm rounded-full bg-black shadow-main-red"
                         >
-                            <p className="absolute top-4 right-4 text-white text-[0.5rem] md:text-xs font-bold">
-                                Total
+                            <p className="absolute top-4 right-10 text-white text-[0.45rem] md:text-xs font-bold">
                                 contributions: {data.user.contributionsCollection.contributionCalendar.totalContributions}
                             </p>
                             <div className="grid grid-cols-3 gap-2 p-0 md:p-2 w-full h-full md:mt-0 mt-6">
@@ -74,8 +73,7 @@ export function GithubProfile() {
                             whileInView={{opacity: 1, x: 0}}
                             transition={{duration: 1}}
                             viewport={{once: true}}
-                            className="bg-black/60 rounded-lg p-4 backdrop-blur-2xl shadow-sm shadow-main-red md:w-fit w-[90%]"
-                        >
+                            className="bg-black/60 rounded-full py-4 px-12 backdrop-blur-2xl shadow-sm shadow-main-red md:w-fit w-[90%]">
                             <h1 className="text-white font-semibold">Contributions</h1>
                             <div className="flex gap-1 w-full overflow-x-auto p-2">
                                 {/* Visualizza tutte le settimane su schermi grandi, solo le ultime 4 su mobile */}
