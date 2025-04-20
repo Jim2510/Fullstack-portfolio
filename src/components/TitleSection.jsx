@@ -96,7 +96,7 @@ export function TitleSection({refForm}) {
                           <span className="text-third-green font-extrabold">machine learning</span>.
                       </h4>
                   </div>
-                  <CtaButton label="Discover" bottomNum="40" onClick={handleRefForm}/>
+                  <CtaButton label="Discover" bottomNum="50" onClick={handleRefForm}/>
               </motion.div>
           </div>
       </>
