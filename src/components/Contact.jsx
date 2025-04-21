@@ -84,20 +84,20 @@ export function Contact() {
             {isOpen && (
                 <motion.div
                     className="fixed top-0 left-0 w-full h-full backdrop-blur-xl z-[200] flex justify-center items-center"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+                    transition={{duration: 0.3}}
                 >
                   <motion.div
-                      className="relative w-full sm:w-[50%] h-[55%] bg-transparent sm:bg-custom-green/70 sm:p-0 flex justify-center items-center"
-                      initial={{ y: "-50%", opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: "-50%", opacity: 0 }}
-                      transition={{ duration: 0.4 }}
+                      className="relative w-[70%] sm:rounded-none rounded-lg sm:w-[50%] h-[55%] bg-custom-green/70 sm:p-0 flex justify-center items-center"
+                      initial={{y: "-50%", opacity: 0}}
+                      animate={{y: 0, opacity: 1}}
+                      exit={{y: "-50%", opacity: 0}}
+                      transition={{duration: 0.4}}
                   >
                     <div
-                        className="absolute sm:top-2 sm:right-2 -top-[11.5rem] right-0 cursor-pointer"
+                        className="absolute sm:top-2 sm:right-2 top-0 right-0 cursor-pointer"
                         onClick={handleForm}
                     >
                       <svg
@@ -108,7 +108,8 @@ export function Contact() {
                           className="bi bi-x fill-slate-300 sm:w-[35px] sm:h-[35px] w-[40px] h-[40px]"
                           viewBox="0 0 16 16"
                       >
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                       </svg>
                     </div>
                     <form
@@ -145,6 +146,7 @@ export function Contact() {
                           className="transition-all ease-in-out hover:bg-main-red hover:text-black cursor-pointer mt-3 hover:bottom-2 bg-custom-green border-[2px] rounded-md border-main-red px-4 py-1 font-tech text-emerald-400"
                           type="submit"
                           value="Send"
+                          onClick={handleForm}
                       />
                     </form>
                   </motion.div>
