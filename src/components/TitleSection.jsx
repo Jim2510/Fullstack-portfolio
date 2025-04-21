@@ -7,55 +7,89 @@ export function TitleSection({ refForm }) {
 
     return (
         <>
-            <div className="relative w-full overflow-hidden z-0">
+            <div className="relative w-full h-screen overflow-hidden z-0">
                 {/* Curva inferiore animata */}
 
                 <svg
-                    className="absolute mt-30 sm:top-0 left-0 w-full z-10 shadow-inner overflow-visible"
+                    className="absolute top-0 left-0 w-[500%] sm:ml-0 ml-50 sm:w-full h-full z-10 shadow-inner overflow-visible"
                     viewBox="0 0 350 200"
                     preserveAspectRatio="none"
                 >
                     <defs>
+                        <filter id="liquid">
+                            <feTurbulence
+                                type="turbulence"
+                                baseFrequency="0.01 0.02"
+                                numOctaves="10"
+                                result="turbulence"
+                                seed="2"
+                            />
+                            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="15"/>
+                        </filter>
+
                         <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
                             <motion.stop
                                 offset="0%"
                                 stopColor="#008170"
                                 animate={{stopColor: ["#008170", "#00FFD1", "#00B894", "#008170"]}}
-                                transition={{duration: 8, repeat: Infinity, ease: "easeInOut"}}
+                                transition={{duration: 14, repeat: Infinity, ease: "easeInOut"}}
                             />
                             <motion.stop
                                 offset="50%"
                                 stopColor="#00FFD1"
                                 animate={{stopColor: ["#00FFD1", "#00B894", "#008170", "#00FFD1"]}}
-                                transition={{duration: 10, repeat: Infinity, ease: "easeInOut"}}
+                                transition={{duration: 18, repeat: Infinity, ease: "easeInOut"}}
                             />
                             <motion.stop
                                 offset="100%"
                                 stopColor="#00B894"
                                 animate={{stopColor: ["#00B894", "#008170", "#00FFD1", "#00B894"]}}
-                                transition={{duration: 12, repeat: Infinity, ease: "easeInOut"}}
+                                transition={{duration: 16, repeat: Infinity, ease: "easeInOut"}}
                             />
                         </linearGradient>
                     </defs>
 
+                    {/* Effetto fluido centrale */}
                     <motion.circle
                         cx="100"
                         cy="100"
                         r="90"
                         fill="url(#gradient1)"
+                        // filter="url(#liquid)"  <--- Rimuovi o commenta questa riga
                         animate={{
-                            r: [90, 110, 90],
-                            cx: [100, 120, 100],
-                            cy: [100, 120, 100],
+                            r: [90, 100, 90],
+                            cx: [100, 110, 100],
+                            cy: [100, 110, 100],
                         }}
                         transition={{
-                            duration: 10,
+                            duration: 20,
                             repeat: Infinity,
                             ease: "easeInOut",
                         }}
                     />
-                </svg>
 
+                    {/* Particelle */}
+                    {[...Array(10)].map((_, i) => (
+                        <motion.circle
+                            key={i}
+                            cx={Math.random() * 300}
+                            cy={Math.random() * 200}
+                            r={Math.random() * 2 + 1}
+                            fill="#00FFD1"
+                            animate={{
+                                cy: ["0%", "100%", "0%"],
+                                opacity: [0.2, 0.8, 0.2],
+                            }}
+                            transition={{
+                                duration: Math.random() * 10 + 10,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                                delay: Math.random() * 3,
+                                ease: "easeInOut",
+                            }}
+                        />
+                    ))}
+                </svg>
 
                 <svg
                     className="sm:flex hidden absolute bottom-0 left-0 w-full z-10 shadow-2xl"
